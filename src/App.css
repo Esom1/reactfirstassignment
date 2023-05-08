@@ -17,6 +17,7 @@
 header {
   background: url("assets/pattern-background-desktop.svg") hsl(228, 44%, 86%)
     no-repeat;
+    height: 120vh;
 }
 
 .main {
@@ -61,7 +62,8 @@ header {
   font-family: "Red Hat Display";
 }
 .link {
-  color: #85ccff;
+  color: #062e4a;
+  font-weight: 800;
 }
 
 .icon img {
@@ -101,10 +103,27 @@ span {
   border-bottom-left-radius: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 25%;
+    margin: auto;
+   
+  }
+ .base{
+  gap: 2rem;
+ }
+ 
+}
+
+
 @media screen and (min-width: 1440px) {
   .container {
-    width: 40%;
+    width: 30%;
     margin: auto;
+  }
+  header {
+    background: url("assets/pattern-background-desktop.svg") hsl(228, 44%, 86%)
+      no-repeat;
   }
 
   .structure {
@@ -137,9 +156,13 @@ span {
     gap: 4rem;
     padding-top: 2rem;
   }
+  .left{
+    text-align: end;
+  }
+  
 
-  .icon img {
-    width: 50px;
+  .pic{
+    width: 40px;
   }
 
   .link {

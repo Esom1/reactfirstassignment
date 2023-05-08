@@ -29,7 +29,7 @@ const Main = () => {
                 </h4>
               </div>
               <div className="link small">
-                <a href={changeLink} target="_blank">
+                <a href={changeLink} className="left" target="_blank">
                   Change
                 </a>
               </div>
