@@ -17,7 +17,7 @@
 header {
   background: url("assets/pattern-background-desktop.svg") hsl(228, 44%, 86%)
     no-repeat;
-    height: 120vh;
+    height: 128vh;
 }
 
 .main {
@@ -112,6 +112,9 @@ span {
  .base{
   gap: 2rem;
  }
+ .price{
+  gap: 0rem;
+ }
  
 }
 
@@ -153,12 +156,12 @@ span {
     align-items: center;
     margin-top: 0rem;
     padding-left: 3rem;
-    gap: 4rem;
+    gap: 3rem;
     padding-top: 2rem;
   }
-  .left{
+  /* .left{
     text-align: end;
-  }
+  } */
   
 
   .pic{
@@ -169,7 +172,7 @@ span {
     color: #85ccff;
   }
   .small{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
   }
 
