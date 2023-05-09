@@ -1,9 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import hero from "../assets/illustration-hero.svg";
 import music from "../assets/icon-music.svg";
+// import { useState } from "react";
 
 const Main = () => {
-  let changeLink = "https://www.facebook.com";
+  // const [plan, setName] = useState('Monthy Plan');
+  const [changes,setChanges] = useState({
+    plan : 'Yearly Plan',
+    date: '$59.99/Year'
+
+  })
+  function handleInfo (countDown){
+    if(changes.plan === 'Yearly Plan'){
+      setChanges({plan: 'Monthly Plan', date: '$4.99/Month'})
+
+    }else{
+      setChanges({ plan : 'Yearly Plan', date: '$59.99/Year'})
+    }
+  }
+
+
+  // let changeLink = "https://www.facebook.com";
   return (
     <>
       <header>
@@ -25,11 +42,11 @@ const Main = () => {
               </div>
               <div className="price">
                 <h4 className="small">
-                  Annual Plan <br /> <span className="small">$59.99/Year</span>
+                {changes.plan}  <br /> <span className="small">{changes.date} </span>
                 </h4>
               </div>
               <div className="link small">
-                <a href={changeLink} className="left" target="_blank">
+                <a onClick={handleInfo} href>
                   Change
                 </a>
               </div>
