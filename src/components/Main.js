@@ -4,9 +4,8 @@ import music from "../assets/icon-music.svg";
 // import { useState } from "react";
 
 const Main = () => {
-  // const [plan, setName] = useState('Monthy Plan');
   const [changes,setChanges] = useState({
-    plan : 'Yearly Plan',
+    plan : 'Annual Plan',
     date: '$59.99/Year'
 
   })
